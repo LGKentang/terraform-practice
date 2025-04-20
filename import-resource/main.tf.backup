@@ -1,0 +1,16 @@
+terraform {
+  cloud {
+		organization = "lgk"
+		workspaces {
+			name = "terraform-experimental"
+			project = "terraform-experimental"		
+		}
+  }
+
+		required_providers {
+		aws = {
+			source = "hashicorp/aws"
+			version = "5.93.0"
+		}
+	}
+}
